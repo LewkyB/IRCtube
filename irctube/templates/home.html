@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <h1>Servers & Chats</h1>
+
+  {% for irc_server in irc_servers %}
+    <h2><a class="post-title" href="{{ irc_server['network_address'] }}/">{{irc_server['network_address'] }}</a></h2>
+    <ul>
+      {% for irc_channel in irc_server['channel_list'] %}
+        <li><a href="{{ url_for('get_chat_videos', server_name=irc_server['network_address'], channel_name=irc_channel) }}">{{ irc_channel }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endblock %}
