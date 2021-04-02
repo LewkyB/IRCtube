@@ -4,7 +4,7 @@ Parse IRC chat logs from [The Lounge](https://github.com/thelounge/thelounge) fo
  
 <p align="center">
     <img width="400" alt="front page" src="https://i.imgur.com/oygzs8y.png">
-    <img width="340" alt="front page" src="https://i.imgur.com/Av4d0Yj.png">
+    <img width="345" alt="front page" src="https://i.imgur.com/Av4d0Yj.png">
 </p>
 
 ## Requirements ##
